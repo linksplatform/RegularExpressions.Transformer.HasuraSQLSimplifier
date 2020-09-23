@@ -42,11 +42,6 @@ namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier
             (new Regex(@"(\W)\([\s\n]*(((?!SELECT)[^()])*?)[\s\n]*\)"), "$1$2", int.MaxValue),
         }.Cast<ISubstitutionRule>().ToList();
 
-        public HasuraSQLSimplifierTransformer(IList<ISubstitutionRule> substitutionRules) 
-            : base(substitutionRules)
-        {
-        }
-
         public HasuraSQLSimplifierTransformer()
             : this(DefaultRules)
         {
