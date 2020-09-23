@@ -1,0 +1,34 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Platform.RegularExpressions.Transformer.HasuraSQLSimplifier
+  name: Platform.RegularExpressions.Transformer.HasuraSQLSimplifier
+  href: api/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.html
+  commentId: N:Platform.RegularExpressions.Transformer.HasuraSQLSimplifier
+  fullName: Platform.RegularExpressions.Transformer.HasuraSQLSimplifier
+  nameWithType: Platform.RegularExpressions.Transformer.HasuraSQLSimplifier
+- uid: Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer
+  name: HasuraSQLSimplifierTransformer
+  href: api/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer.html
+  commentId: T:Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer
+  fullName: Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer
+  nameWithType: HasuraSQLSimplifierTransformer
+- uid: Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer.#ctor
+  name: HasuraSQLSimplifierTransformer()
+  href: api/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer.html#Platform_RegularExpressions_Transformer_HasuraSQLSimplifier_HasuraSQLSimplifierTransformer__ctor
+  commentId: M:Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer.#ctor
+  fullName: Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer.HasuraSQLSimplifierTransformer()
+  nameWithType: HasuraSQLSimplifierTransformer.HasuraSQLSimplifierTransformer()
+- uid: Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer.#ctor*
+  name: HasuraSQLSimplifierTransformer
+  href: api/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer.html#Platform_RegularExpressions_Transformer_HasuraSQLSimplifier_HasuraSQLSimplifierTransformer__ctor_
+  commentId: Overload:Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer.#ctor
+  isSpec: "True"
+  fullName: Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer.HasuraSQLSimplifierTransformer
+  nameWithType: HasuraSQLSimplifierTransformer.HasuraSQLSimplifierTransformer
+- uid: Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer.DefaultRules
+  name: DefaultRules
+  href: api/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer.html#Platform_RegularExpressions_Transformer_HasuraSQLSimplifier_HasuraSQLSimplifierTransformer_DefaultRules
+  commentId: F:Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer.DefaultRules
+  fullName: Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer.DefaultRules
+  nameWithType: HasuraSQLSimplifierTransformer.DefaultRules
