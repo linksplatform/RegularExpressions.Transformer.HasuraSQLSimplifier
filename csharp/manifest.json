@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "/home/runner/work/HasuraSQLSimplifier/HasuraSQLSimplifier",
+  "source_base_path": "/home/runner/work/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "pJgp0Dsj7GuQ04FZv3qSWA=="
+          "hash": "Sulft0+NGzMoRqkdjh+qEA=="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer.html",
-          "hash": "BxFRNVK0ajPkbvnaq0LdMQ=="
+          "hash": "V3SZsuGQXzqO+qitNlxyOA=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.html",
-          "hash": "Jhrfk6qSk6ChqoatHOo/nA=="
+          "hash": "NayEwXRFQ63ebOWXQBBRmw=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "ylsOzG643VH+70iLRQQ5aw=="
+          "hash": "RyI6dVcKgnAvthCTw8rSvg=="
         }
       },
       "is_incremental": false,
