@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "z5M2MbzxKrlXfIYGcqWvdQ=="
+          "hash": "NCECpBAiLR3DCEs/nCL4mA=="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer.html",
-          "hash": "Zw6Y8CzMk1owv1CURuChlw=="
+          "hash": "dK7r/tsKfmB+vKEKfQWOrQ=="
         }
       },
       "is_incremental": false,

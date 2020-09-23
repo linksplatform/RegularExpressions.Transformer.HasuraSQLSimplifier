@@ -12,6 +12,6 @@
   "README.html": {
     "href": "README.html",
     "title": "HasuraSQLSimplifier | LinksPlatform's Platform.RegularExpressions.Transformer.HasuraSQLSimplifier Library",
-    "keywords": "HasuraSQLSimplifier LinksPlatform's Platform.RegularExpressions.Transformer.HasuraSQLSimplifier Class Library. Namespace: Platform.RegularExpressions.Transformer.HasuraSQLSimplifier NuGet package: Platform.RegularExpressions.Transformer.HasuraSQLSimplifier Documentation PDF file with code for e-readers. CLI tool build cd csharp\\Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.CLI dotnet publish -c Release --runtime win10-x64 --self-contained true -p:PublishSingleFile=true Depend on Platform.RegularExpressions.Transformer"
+    "keywords": "HasuraSQLSimplifier LinksPlatform's Platform.RegularExpressions.Transformer.HasuraSQLSimplifier Class Library. Namespace: Platform.RegularExpressions.Transformer.HasuraSQLSimplifier NuGet package: Platform.RegularExpressions.Transformer.HasuraSQLSimplifier Documentation PDF file with code for e-readers. Build CLI tool cd csharp\\Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.CLI dotnet publish -c Release --runtime win10-x64 --self-contained true -p:PublishSingleFile=true Depend on Platform.RegularExpressions.Transformer"
   }
 }
