@@ -43,7 +43,7 @@ namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier
         }.Cast<ISubstitutionRule>().ToList();
 
         public HasuraSQLSimplifierTransformer()
-            : this(DefaultRules)
+            : base(DefaultRules)
         {
         }
     }
