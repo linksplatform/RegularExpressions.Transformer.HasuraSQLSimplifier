@@ -1,5 +1,5 @@
-﻿using Platform.Collections.Arrays;
-using System;
+﻿using System;
+using Platform.Collections.Arrays;
 
 namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.CLI
 {
