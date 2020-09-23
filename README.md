@@ -1,6 +1,6 @@
 [![NuGet Version and Downloads count](https://buildstats.info/nuget/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier)](https://www.nuget.org/packages/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier)
 [![Actions Status](https://github.com/linksplatform/RegularExpressions.Transformer.HasuraSQLSimplifier/workflows/CD/badge.svg)](https://github.com/linksplatform/RegularExpressions.Transformer.HasuraSQLSimplifier/actions?workflow=CD)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7bcd272efb834b7993f0cf3ea1e9bb69)](https://www.codacy.com/manual/drakonard/RegularExpressions.Transformer.HasuraSQLSimplifier?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=linksplatform/RegularExpressions.Transformer.HasuraSQLSimplifier&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/e48d26edaaa340c6b89c606cdd2d018e)](https://www.codacy.com/gh/linksplatform/RegularExpressions.Transformer.HasuraSQLSimplifier/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=linksplatform/RegularExpressions.Transformer.HasuraSQLSimplifier&amp;utm_campaign=Badge_Grade)
 [![CodeFactor](https://www.codefactor.io/repository/github/linksplatform/RegularExpressions.Transformer.HasuraSQLSimplifier/badge)](https://www.codefactor.io/repository/github/linksplatform/RegularExpressions.Transformer.HasuraSQLSimplifier)
 
 # [HasuraSQLSimplifier](https://github.com/linksplatform/HasuraSQLSimplifier)
