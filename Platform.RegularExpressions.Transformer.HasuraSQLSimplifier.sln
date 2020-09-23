@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.RegularExpressions.Transformer.HasuraSQLSimplifier", "csharp\Platform.RegularExpressions.Transformer.HasuraSQLSimplifier\Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.csproj", "{00A15FCD-94B8-41DD-9747-B7958EDC841F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.Tests", "csharp\Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.Tests\Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.Tests.csproj", "{003589B4-670D-470F-AE2B-3E5DBA0B3C0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.Tests", "csharp\Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.Tests\Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.Tests.csproj", "{003589B4-670D-470F-AE2B-3E5DBA0B3C0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.CLI", "csharp\Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.CLI\Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.CLI.csproj", "{1EBEB2FB-56D5-4F1F-9646-AD70F1A35A89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{003589B4-670D-470F-AE2B-3E5DBA0B3C0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{003589B4-670D-470F-AE2B-3E5DBA0B3C0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{003589B4-670D-470F-AE2B-3E5DBA0B3C0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EBEB2FB-56D5-4F1F-9646-AD70F1A35A89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EBEB2FB-56D5-4F1F-9646-AD70F1A35A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EBEB2FB-56D5-4F1F-9646-AD70F1A35A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EBEB2FB-56D5-4F1F-9646-AD70F1A35A89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
