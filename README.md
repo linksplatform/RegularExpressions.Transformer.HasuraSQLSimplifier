@@ -7,12 +7,12 @@
 
 LinksPlatform's Platform.RegularExpressions.Transformer.HasuraSQLSimplifier Class Library.
 
-Namespace: [Platform.RegularExpressions.Transformer.HasuraSQLSimplifier](https://linksplatform.github.io/HasuraSQLSimplifier/csharp/api/Platform.HasuraSQLSimplifier.html)
+Namespace: [Platform.RegularExpressions.Transformer.HasuraSQLSimplifier](https://linksplatform.github.io/RegularExpressions.Transformer.HasuraSQLSimplifier/csharp/api/Platform.HasuraSQLSimplifier.html)
 
 NuGet package: [Platform.RegularExpressions.Transformer.HasuraSQLSimplifier](https://www.nuget.org/packages/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier)
 
 ## [Documentation](https://linksplatform.github.io/RegularExpressions.Transformer.HasuraSQLSimplifier)
-[PDF file](https://linksplatform.github.io/HasuraSQLSimplifier/csharp/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.pdf) with code for e-readers.
+[PDF file](https://linksplatform.github.io/RegularExpressions.Transformer.HasuraSQLSimplifier/csharp/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.pdf) with code for e-readers.
 
 ## Depend on
 *   [Platform.RegularExpressions.Transformer](https://github.com/linksplatform/RegularExpressions.Transformer)	
