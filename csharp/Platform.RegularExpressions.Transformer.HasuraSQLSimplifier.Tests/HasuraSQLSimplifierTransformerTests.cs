@@ -110,10 +110,8 @@ FROM
         FROM
           ""public"".""nodes""
         WHERE
-          (
-            ""public"".""nodes"".""type"" = 'auth_token'::text
-            AND (
-              EXISTS (
+          ""public"".""nodes"".""type"" = 'auth_token'::text
+            AND EXISTS (
                 SELECT
                   1
                 FROM
@@ -123,8 +121,6 @@ FROM
                     AND ""_0__be_0_nodes"".""type"" = 'describe'::text
                         AND ""_0__be_0_nodes"".""target_id"" = 'X-Hasura-User-Id'::text
               )
-            )
-          )
       ) AS ""_1_root.base""
     LIMIT 1
   ) AS ""_3_root""";
