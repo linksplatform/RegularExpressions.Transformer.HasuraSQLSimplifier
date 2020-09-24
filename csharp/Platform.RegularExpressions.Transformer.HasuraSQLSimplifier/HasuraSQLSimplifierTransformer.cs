@@ -38,7 +38,13 @@ namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier
             (new Regex(@"(LIMIT)[\s\n]*(\d+)"), "$1 $2", 0),
             // ("_0__be_0_nodes"."type" = 'describe'::text)
             // "_0__be_0_nodes"."type" = 'describe'::text
-            (new Regex(@"(\W)\([\s\n]*(((?!SELECT)[^()])*?)[\s\n]*\)"), "$1$2", int.MaxValue),
+            (new Regex(@"(\W)\([\s\n]*((?!SELECT)[^\s\n()][^()]*?)[\s\n]*\)"), "$1$2", int.MaxValue),
+            // (EXISTS (...))
+            // EXISTS (...)
+            (new Regex(@"(\W)\([\s\n]*((?!SELECT)[^\s\n()][^()]*\([^()]*\)[^()]*?)[\s\n]*\)"), "$1$2", int.MaxValue),
+            // ((EXISTS (...)))
+            // (EXISTS (...))
+            (new Regex(@"(\W)\([\s\n]*((?!SELECT)[^\s\n()][^()]*\([^()]*\([^()]*\)[^()]*\)[^()]*?)[\s\n]*\)"), "$1$2", int.MaxValue),
         }.Cast<ISubstitutionRule>().ToList();
 
         public HasuraSQLSimplifierTransformer()
