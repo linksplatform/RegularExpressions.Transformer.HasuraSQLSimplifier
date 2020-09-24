@@ -14,5 +14,12 @@ NuGet package: [Platform.RegularExpressions.Transformer.HasuraSQLSimplifier](htt
 ## [Documentation](https://linksplatform.github.io/RegularExpressions.Transformer.HasuraSQLSimplifier)
 [PDF file](https://linksplatform.github.io/RegularExpressions.Transformer.HasuraSQLSimplifier/csharp/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.pdf) with code for e-readers.
 
+## Build CLI tool
+
+```
+cd csharp\Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.CLI
+dotnet publish -c Release --runtime win10-x64 --self-contained true -p:PublishSingleFile=true
+```
+
 ## Depend on
 *   [Platform.RegularExpressions.Transformer](https://github.com/linksplatform/RegularExpressions.Transformer)	
