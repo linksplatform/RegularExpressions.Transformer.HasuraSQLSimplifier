@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
@@ -6,8 +6,21 @@ using System.Text.RegularExpressions;
 
 namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier
 {
+    /// <summary>
+    /// <para>
+    /// Represents the hasura sql simplifier transformer.
+    /// </para>
+    /// <para></para>
+    /// </summary>
+    /// <seealso cref="TextTransformer"/>
     public class HasuraSQLSimplifierTransformer : TextTransformer
     {
+        /// <summary>
+        /// <para>
+        /// The to list.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         public static readonly IList<ISubstitutionRule> DefaultRules = new List<SubstitutionRule>
         {
             // HTML clean up
@@ -47,6 +60,12 @@ namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier
             (new Regex(@"(\W)\([\s\n]*((?!SELECT)[^\s\n()][^()]*\([^()]*\([^()]*\)[^()]*\)[^()]*?)[\s\n]*\)"), "$1$2", int.MaxValue),
         }.Cast<ISubstitutionRule>().ToList();
 
+        /// <summary>
+        /// <para>
+        /// Initializes a new <see cref="HasuraSQLSimplifierTransformer"/> instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         public HasuraSQLSimplifierTransformer()
             : base(DefaultRules)
         {
