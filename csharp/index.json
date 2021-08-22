@@ -2,12 +2,12 @@
   "api/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer.html": {
     "href": "api/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer.html",
     "title": "Class HasuraSQLSimplifierTransformer | LinksPlatform's Platform.RegularExpressions.Transformer.HasuraSQLSimplifier Library",
-    "keywords": "Class HasuraSQLSimplifierTransformer Inheritance Object HasuraSQLSimplifierTransformer Namespace : Platform.RegularExpressions.Transformer.HasuraSQLSimplifier Assembly : Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.dll Syntax public class HasuraSQLSimplifierTransformer : TextTransformer Constructors | Improve this Doc View Source HasuraSQLSimplifierTransformer() Declaration public HasuraSQLSimplifierTransformer() Fields | Improve this Doc View Source DefaultRules Declaration public static readonly IList<ISubstitutionRule> DefaultRules Field Value Type Description IList < ISubstitutionRule >"
+    "keywords": "Class HasuraSQLSimplifierTransformer Represents the hasura sql simplifier transformer. Inheritance Object HasuraSQLSimplifierTransformer Namespace : Platform.RegularExpressions.Transformer.HasuraSQLSimplifier Assembly : Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.dll Syntax public class HasuraSQLSimplifierTransformer : TextTransformer Constructors | Improve this Doc View Source HasuraSQLSimplifierTransformer() Initializes a new HasuraSQLSimplifierTransformer instance. Declaration public HasuraSQLSimplifierTransformer() Fields | Improve this Doc View Source DefaultRules The to list. Declaration public static readonly IList<ISubstitutionRule> DefaultRules Field Value Type Description IList < ISubstitutionRule >"
   },
   "api/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.html": {
     "href": "api/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.html",
     "title": "Namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier | LinksPlatform's Platform.RegularExpressions.Transformer.HasuraSQLSimplifier Library",
-    "keywords": "Namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier Classes HasuraSQLSimplifierTransformer"
+    "keywords": "Namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier Classes HasuraSQLSimplifierTransformer Represents the hasura sql simplifier transformer."
   },
   "README.html": {
     "href": "README.html",

@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.HasuraSQLSimplifierTransformer.html",
-          "hash": "g6AtOUeHVqkadylkcVjZQg=="
+          "hash": "yODIsm5ukofzVUjiivI8qQ=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.html",
-          "hash": "sntNB8S9ok7qmt4kF7VuKA=="
+          "hash": "jr0EokWtBXI8S8IGhR37fw=="
         }
       },
       "is_incremental": false,
