@@ -3,9 +3,27 @@ using Platform.Collections.Arrays;
 
 namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.CLI
 {
+    /// <summary>
+    /// <para>
+    /// Represents the program.
+    /// </para>
+    /// <para></para>
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// <para>
+        /// The default source file extension.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private const string DefaultSourceFileExtension = ".sql";
+        /// <summary>
+        /// <para>
+        /// The default target file extension.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private const string DefaultTargetFileExtension = ".simplified.sql";
 
         /// <summary>
