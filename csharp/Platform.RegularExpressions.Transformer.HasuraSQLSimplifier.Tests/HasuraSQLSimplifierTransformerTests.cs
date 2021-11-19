@@ -2,20 +2,8 @@ using Xunit;
 
 namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.Tests
 {
-    /// <summary>
-    /// <para>
-    /// Represents the hasura sql simplifier transformer tests.
-    /// </para>
-    /// <para></para>
-    /// </summary>
     public class HasuraSQLSimplifierTransformerTests
     {
-        /// <summary>
-        /// <para>
-        /// Tests that empty line test.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Fact]
         public void EmptyLineTest()
         {
@@ -25,12 +13,6 @@ namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.Tests
             Assert.Equal("", actualResult);
         }
 
-        /// <summary>
-        /// <para>
-        /// Tests that basic request test.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Fact]
         public void BasicRequestTest()
         {
