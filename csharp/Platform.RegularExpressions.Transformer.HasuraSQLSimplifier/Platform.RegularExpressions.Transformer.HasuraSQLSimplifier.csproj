@@ -6,7 +6,7 @@
     <AssemblyTitle>Platform.RegularExpressions.Transformer.HasuraSQLSimplifier</AssemblyTitle>
     <VersionPrefix>0.0.2</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
-    <TargetFrameworks>net472;netstandard2.0;netstandard2.1;net5;net6</TargetFrameworks>
+    <TargetFramework>net7</TargetFramework>
     <AssemblyName>Platform.RegularExpressions.Transformer.HasuraSQLSimplifier</AssemblyName>
     <PackageId>Platform.RegularExpressions.Transformer.HasuraSQLSimplifier</PackageId>
     <PackageTags>LinksPlatform;RegularExpressions.Transformer.HasuraSQLSimplifier;HasuraSQLSimplifierTransformer</PackageTags>
