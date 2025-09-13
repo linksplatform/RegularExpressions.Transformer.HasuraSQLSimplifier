@@ -1,14 +1,14 @@
 using Xunit;
 
-namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.Tests
+namespace Platform.RegularExpressions.Transformer.SQL.Tests
 {
-    public class HasuraSQLSimplifierTransformerTests
+    public class SQLTransformerTests
     {
         [Fact]
         public void EmptyLineTest()
         {
             // This test can help to test basic problems with regular expressions like incorrect syntax
-            var transformer = new HasuraSQLSimplifierTransformer();
+            var transformer = new SQLTransformer();
             var actualResult = transformer.Transform("");
             Assert.Equal("", actualResult);
         }
@@ -124,7 +124,7 @@ FROM
       ) AS ""_1_root.base""
     LIMIT 1
   ) AS ""_3_root""";
-            var transformer = new HasuraSQLSimplifierTransformer();
+            var transformer = new SQLTransformer();
             var actual = transformer.Transform(original);
             Assert.Equal(expected, actual);
         }

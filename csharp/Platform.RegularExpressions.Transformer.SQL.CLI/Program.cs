@@ -1,7 +1,7 @@
 using System;
 using Platform.Collections.Arrays;
 
-namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.CLI
+namespace Platform.RegularExpressions.Transformer.SQL.CLI
 {
     class Program
     {
@@ -22,7 +22,7 @@ namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.CLI
         {
             var sourceFileExtension = GetSourceFileExtension(args);
             var targetFileExtension = GetTargetFileExtension(args);
-            var simplifier = new HasuraSQLSimplifierTransformer();
+            var simplifier = new SQLTransformer();
             var transformer = IsDebugModeRequested(args) ? new LoggingFileTransformer(simplifier, sourceFileExtension, targetFileExtension) : new FileTransformer(simplifier, sourceFileExtension, targetFileExtension);
             new TransformerCLI(transformer).Run(args);
         }

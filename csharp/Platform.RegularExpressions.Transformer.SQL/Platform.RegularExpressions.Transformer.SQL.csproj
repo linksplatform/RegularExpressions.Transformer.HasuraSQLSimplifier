@@ -1,20 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>LinksPlatform's Platform.RegularExpressions.Transformer.HasuraSQLSimplifier Class Library</Description>
+    <Description>LinksPlatform's Platform.RegularExpressions.Transformer.SQL Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
-    <AssemblyTitle>Platform.RegularExpressions.Transformer.HasuraSQLSimplifier</AssemblyTitle>
+    <AssemblyTitle>Platform.RegularExpressions.Transformer.SQL</AssemblyTitle>
     <VersionPrefix>0.0.2</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFramework>net8</TargetFramework>
-    <AssemblyName>Platform.RegularExpressions.Transformer.HasuraSQLSimplifier</AssemblyName>
-    <PackageId>Platform.RegularExpressions.Transformer.HasuraSQLSimplifier</PackageId>
-    <PackageTags>LinksPlatform;RegularExpressions.Transformer.HasuraSQLSimplifier;HasuraSQLSimplifierTransformer</PackageTags>
+    <AssemblyName>Platform.RegularExpressions.Transformer.SQL</AssemblyName>
+    <PackageId>Platform.RegularExpressions.Transformer.SQL</PackageId>
+    <PackageTags>LinksPlatform;RegularExpressions.Transformer.SQL;SQLTransformer</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/linksplatform/Documentation/18469f4d033ee9a5b7b84caab9c585acab2ac519/doc/Avatar-rainbow-icon-64x64.png</PackageIconUrl>
-    <PackageProjectUrl>https://linksplatform.github.io/RegularExpressions.Transformer.HasuraSQLSimplifier</PackageProjectUrl>
+    <PackageProjectUrl>https://linksplatform.github.io/RegularExpressions.Transformer.SQL</PackageProjectUrl>
     <PackageLicenseExpression>Unlicensed</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>git://github.com/linksplatform/HasuraSQLSimplifier</RepositoryUrl>
+    <RepositoryUrl>git://github.com/linksplatform/RegularExpressions.Transformer.SQL</RepositoryUrl>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>

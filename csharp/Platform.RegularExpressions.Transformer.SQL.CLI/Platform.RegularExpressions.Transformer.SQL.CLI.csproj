@@ -2,14 +2,14 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6</TargetFramework>
+    <TargetFramework>net8</TargetFramework>
     <IsPackable>false</IsPackable>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Platform.RegularExpressions.Transformer.HasuraSQLSimplifier\Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.csproj" />
+    <ProjectReference Include="..\Platform.RegularExpressions.Transformer.SQL\Platform.RegularExpressions.Transformer.SQL.csproj" />
   </ItemGroup>
 
 </Project>
