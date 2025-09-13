@@ -14,6 +14,70 @@ namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.Tests
         }
 
         [Fact]
+        public void SpanTagRemovalTest()
+        {
+            var transformer = new HasuraSQLSimplifierTransformer();
+            
+            // Test basic span tag removal
+            var input1 = @"SELECT <span class=""highlight"">column_name</span> FROM table";
+            var expected1 = @"SELECT column_name FROM table";
+            var actual1 = transformer.Transform(input1);
+            Assert.Equal(expected1, actual1);
+            
+            // Test span tag with extra whitespace removal
+            var input2 = @"SELECT <span class=""highlight"">  column_name  </span> FROM table";
+            var expected2 = @"SELECT column_name FROM table";
+            var actual2 = transformer.Transform(input2);
+            Assert.Equal(expected2, actual2);
+            
+            // Test span tag with newlines and tabs
+            var input3 = @"SELECT <span class=""highlight"">
+                column_name
+            </span> FROM table";
+            var expected3 = @"SELECT column_name FROM table";
+            var actual3 = transformer.Transform(input3);
+            Assert.Equal(expected3, actual3);
+        }
+
+        [Fact]
+        public void CodeTagRemovalTest()
+        {
+            var transformer = new HasuraSQLSimplifierTransformer();
+            
+            // Test basic code tag removal
+            var input1 = @"SELECT <code>column_name</code> FROM table";
+            var expected1 = @"SELECT column_name FROM table";
+            var actual1 = transformer.Transform(input1);
+            Assert.Equal(expected1, actual1);
+            
+            // Test code tag with extra whitespace removal
+            var input2 = @"SELECT <code>  column_name  </code> FROM table";
+            var expected2 = @"SELECT column_name FROM table";
+            var actual2 = transformer.Transform(input2);
+            Assert.Equal(expected2, actual2);
+            
+            // Test code tag with newlines and tabs
+            var input3 = @"SELECT <code>
+                column_name
+            </code> FROM table";
+            var expected3 = @"SELECT column_name FROM table";
+            var actual3 = transformer.Transform(input3);
+            Assert.Equal(expected3, actual3);
+        }
+
+        [Fact]
+        public void MixedHtmlTagsTest()
+        {
+            var transformer = new HasuraSQLSimplifierTransformer();
+            
+            // Test mixed span and code tags
+            var input = @"SELECT <span class=""highlight"">  table_name  </span>.<code>  column_name  </code> FROM <span class=""table"">another_table</span>";
+            var expected = @"SELECT table_name.column_name FROM another_table";
+            var actual = transformer.Transform(input);
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
         public void BasicRequestTest()
         {
             var original = @"SELECT
