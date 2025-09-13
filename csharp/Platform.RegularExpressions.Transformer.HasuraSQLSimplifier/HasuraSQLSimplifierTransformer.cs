@@ -27,7 +27,8 @@ namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier
             (new Regex(@"<span class=""[^""]*"">([^<>]*)<\/span>"), "$1", 0),
             // ('describe')
             // 'describe'
-            (new Regex(@"\([\s\n]*('[^']+')[\s\n]*\)"), "$1", int.MaxValue),
+            // But preserve function calls like bool_or('true')
+            (new Regex(@"(?<!\w)\([\s\n]*('[^']+')[\s\n]*\)"), "$1", int.MaxValue),
             // AND ('true' AND 'true')
             //
             (new Regex(@"[\s\n]*AND[\s\n]*\([\s\n]*'true'[\s\n]*AND[\s\n]*'true'[\s\n]*\)"), "", 0),
