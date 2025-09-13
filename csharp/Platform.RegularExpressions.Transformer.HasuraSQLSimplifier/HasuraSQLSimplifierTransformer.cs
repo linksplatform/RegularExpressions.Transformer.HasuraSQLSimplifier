@@ -58,6 +58,9 @@ namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier
             // ((EXISTS (...)))
             // (EXISTS (...))
             (new Regex(@"(\W)\([\s\n]*((?!SELECT)[^\s\n()][^()]*\([^()]*\([^()]*\)[^()]*\)[^()]*?)[\s\n]*\)"), "$1$2", int.MaxValue),
+            // SQL keyword compactification for simple cases: SELECT\n*\nFROM\ntable\nWHERE -> SELECT * FROM table WHERE
+            // Only applies to simple single-word/single-char patterns to avoid breaking complex queries
+            (new Regex(@"^(SELECT)\n(\*|\w+(?:\.\w+)?(?:,\s*\w+(?:\.\w+)?)*)\nFROM\n(\w+(?:\.\w+)?)\n(WHERE|ORDER\s+BY|GROUP\s+BY|LIMIT|$)", RegexOptions.IgnoreCase | RegexOptions.Multiline), "$1 $2 FROM $3 $4", 0),
         }.Cast<ISubstitutionRule>().ToList();
 
         /// <summary>
