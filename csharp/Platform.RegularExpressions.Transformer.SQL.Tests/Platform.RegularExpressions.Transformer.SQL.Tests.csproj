@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Platform.RegularExpressions.Transformer.HasuraSQLSimplifier\Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.csproj" />
+    <ProjectReference Include="..\Platform.RegularExpressions.Transformer.SQL\Platform.RegularExpressions.Transformer.SQL.csproj" />
   </ItemGroup>
 
 </Project>

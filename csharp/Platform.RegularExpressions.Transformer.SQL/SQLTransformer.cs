@@ -4,16 +4,16 @@ using System.Text.RegularExpressions;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
-namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier
+namespace Platform.RegularExpressions.Transformer.SQL
 {
     /// <summary>
     /// <para>
-    /// Represents the hasura sql simplifier transformer.
+    /// Represents the SQL transformer.
     /// </para>
     /// <para></para>
     /// </summary>
     /// <seealso cref="TextTransformer"/>
-    public class HasuraSQLSimplifierTransformer : TextTransformer
+    public class SQLTransformer : TextTransformer
     {
         /// <summary>
         /// <para>
@@ -62,11 +62,11 @@ namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier
 
         /// <summary>
         /// <para>
-        /// Initializes a new <see cref="HasuraSQLSimplifierTransformer"/> instance.
+        /// Initializes a new <see cref="SQLTransformer"/> instance.
         /// </para>
         /// <para></para>
         /// </summary>
-        public HasuraSQLSimplifierTransformer()
+        public SQLTransformer()
             : base(DefaultRules)
         {
         }
