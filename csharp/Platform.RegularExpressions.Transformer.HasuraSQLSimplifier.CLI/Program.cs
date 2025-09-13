@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Platform.Collections.Arrays;
 
 namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.CLI
@@ -7,6 +8,7 @@ namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.CLI
     {
         private const string DefaultSourceFileExtension = ".sql";
         private const string DefaultTargetFileExtension = ".simplified.sql";
+        private const string MinifiedTargetFileExtension = ".minified.sql";
 
         /// <summary>
         /// <para>
@@ -22,8 +24,9 @@ namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.CLI
         {
             var sourceFileExtension = GetSourceFileExtension(args);
             var targetFileExtension = GetTargetFileExtension(args);
-            var simplifier = new HasuraSQLSimplifierTransformer();
-            var transformer = IsDebugModeRequested(args) ? new LoggingFileTransformer(simplifier, sourceFileExtension, targetFileExtension) : new FileTransformer(simplifier, sourceFileExtension, targetFileExtension);
+            var isMinifierMode = IsMinifierModeRequested(args);
+            TextTransformer textTransformer = isMinifierMode ? new HasuraSQLMinifierTransformer() : new HasuraSQLSimplifierTransformer();
+            var transformer = IsDebugModeRequested(args) ? new LoggingFileTransformer(textTransformer, sourceFileExtension, targetFileExtension) : new FileTransformer(textTransformer, sourceFileExtension, targetFileExtension);
             new TransformerCLI(transformer).Run(args);
         }
 
@@ -57,7 +60,14 @@ namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.CLI
         /// <para>The string</para>
         /// <para></para>
         /// </returns>
-        static string GetTargetFileExtension(string[] args) => args.TryGetElement(3, out string targetFileExtension) ? targetFileExtension : DefaultTargetFileExtension;
+        static string GetTargetFileExtension(string[] args)
+        {
+            if (args.TryGetElement(3, out string targetFileExtension))
+            {
+                return targetFileExtension;
+            }
+            return IsMinifierModeRequested(args) ? MinifiedTargetFileExtension : DefaultTargetFileExtension;
+        }
 
         /// <summary>
         /// <para>
@@ -74,5 +84,21 @@ namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier.CLI
         /// <para></para>
         /// </returns>
         static private bool IsDebugModeRequested(string[] args) => args.TryGetElement(4, out string debugArgument) ? string.Equals(debugArgument, "debug", StringComparison.OrdinalIgnoreCase) : false;
+
+        /// <summary>
+        /// <para>
+        /// Determines whether minifier mode is requested.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="args">
+        /// <para>The args.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The bool</para>
+        /// <para></para>
+        /// </returns>
+        static private bool IsMinifierModeRequested(string[] args) => args.Any(arg => string.Equals(arg, "minify", StringComparison.OrdinalIgnoreCase));
     }
 }

@@ -71,4 +71,51 @@ namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier
         {
         }
     }
+
+    /// <summary>
+    /// <para>
+    /// Represents the hasura sql minifier transformer.
+    /// </para>
+    /// <para></para>
+    /// </summary>
+    /// <seealso cref="TextTransformer"/>
+    public class HasuraSQLMinifierTransformer : TextTransformer
+    {
+        /// <summary>
+        /// <para>
+        /// The minifier rules to compress SQL by removing unnecessary whitespace and formatting.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        public static readonly IList<ISubstitutionRule> MinifierRules = new List<SubstitutionRule>
+        {
+            // Remove comments starting with --
+            (new Regex(@"--.*?(?:\r?\n|$)"), "", 0),
+            // Remove C-style comments /* ... */
+            (new Regex(@"/\*.*?\*/", RegexOptions.Singleline), "", 0),
+            // Replace multiple whitespace characters (including newlines) with single space
+            (new Regex(@"\s+"), " ", 0),
+            // Remove spaces around parentheses, commas and semicolons but keep comma spacing
+            (new Regex(@"\s*([(),;])\s*"), "$1", 0),
+            (new Regex(@","), ", ", 0),
+            // Remove spaces around dots and double colons
+            (new Regex(@"\s*\.\s*"), ".", 0),
+            (new Regex(@"\s*::\s*"), "::", 0),
+            // Clean up multiple spaces
+            (new Regex(@" {2,}"), " ", 0),
+            // Trim leading and trailing whitespace
+            (new Regex(@"^\s+|\s+$"), "", 0)
+        }.Cast<ISubstitutionRule>().ToList();
+
+        /// <summary>
+        /// <para>
+        /// Initializes a new <see cref="HasuraSQLMinifierTransformer"/> instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        public HasuraSQLMinifierTransformer()
+            : base(MinifierRules)
+        {
+        }
+    }
 }
