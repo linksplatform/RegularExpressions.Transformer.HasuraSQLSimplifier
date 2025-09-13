@@ -128,5 +128,37 @@ FROM
             var actual = transformer.Transform(original);
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void CompactificationTest()
+        {
+            var original = @"SELECT
+*
+FROM
+nodes
+WHERE";
+            
+            var expected = "SELECT * FROM nodes WHERE";
+            
+            var transformer = new HasuraSQLSimplifierTransformer();
+            var actual = transformer.Transform(original);
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void SimpleCompactificationWithColumnsTest()
+        {
+            var original = @"SELECT
+id
+FROM
+users
+WHERE";
+            
+            var expected = "SELECT id FROM users WHERE";
+            
+            var transformer = new HasuraSQLSimplifierTransformer();
+            var actual = transformer.Transform(original);
+            Assert.Equal(expected, actual);
+        }
     }
 }
