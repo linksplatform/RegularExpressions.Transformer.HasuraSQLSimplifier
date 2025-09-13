@@ -23,8 +23,10 @@ namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier
         /// </summary>
         public static readonly IList<ISubstitutionRule> DefaultRules = new List<SubstitutionRule>
         {
-            // HTML clean up
-            (new Regex(@"<span class=""[^""]*"">([^<>]*)<\/span>"), "$1", 0),
+            // HTML clean up - span tags with whitespace trimming
+            (new Regex(@"<span class=""[^""]*"">\s*([^<>]*?)\s*<\/span>"), "$1", 0),
+            // HTML clean up - code tags with whitespace trimming
+            (new Regex(@"<code>\s*([^<>]*?)\s*<\/code>"), "$1", 0),
             // ('describe')
             // 'describe'
             (new Regex(@"\([\s\n]*('[^']+')[\s\n]*\)"), "$1", int.MaxValue),
