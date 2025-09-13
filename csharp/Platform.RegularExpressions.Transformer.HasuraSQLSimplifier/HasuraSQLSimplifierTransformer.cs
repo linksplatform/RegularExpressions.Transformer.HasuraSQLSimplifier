@@ -34,6 +34,12 @@ namespace Platform.RegularExpressions.Transformer.HasuraSQLSimplifier
             // AND ('true')
             // 
             (new Regex(@"[\s\n]*AND[\s\n]*'true'"), "", 0),
+            // OR ('false' OR 'false')
+            //
+            (new Regex(@"[\s\n]*OR[\s\n]*\([\s\n]*'false'[\s\n]*OR[\s\n]*'false'[\s\n]*\)"), "", 0),
+            // OR ('false')
+            // 
+            (new Regex(@"[\s\n]*OR[\s\n]*'false'"), "", 0),
             //  :: 
             // ::
             (new Regex(@"[\s]*::[\s]*"), "::", 0),
